@@ -272,8 +272,9 @@ namespace Akinator.Api.Net
                 }
                 default:
                 {
-                    throw new NotSupportedException(
-                        $"Language with the code {languageCode} is currently not supported.");
+                    return Language.Unknown;
+                    //throw new NotSupportedException(
+                    //    $"Language with the code {languageCode} is currently not supported.");
                 }
             }
         }
